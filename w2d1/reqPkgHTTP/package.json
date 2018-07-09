@@ -1,0 +1,14 @@
+{
+  "name": "reqpkghttp",
+  "version": "1.0.0",
+  "description": "Make HTTP requests using the `request` HTTP client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Zvaniga",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}
