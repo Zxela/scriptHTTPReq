@@ -7,21 +7,14 @@ module.exports = function getHTML (options, callback) {
    //cb invoken when chunk recieved
         response.on('data', function (data) {
             newData += data;
-    // console.log('data = ', data);
-     // console.log(arr)
         });
    //cb invoked on chunk end
         response.on('end', function (data) {
-            printHTML(newData);
+            callback(newData);
         });
     });
 }
-function printHTML (html) {
-        console.log(html);
-    }
 
-var requestOptions = {
-    host: 'sytantris.github.io',
-    path: '/http-examples/step4.html'
-};
+
+
 
