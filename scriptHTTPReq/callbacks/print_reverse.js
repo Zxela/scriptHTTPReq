@@ -1,8 +1,7 @@
 var getHTML = require('./http-func');
 var requestOptions = {
     host: 'sytantris.github.io',
-    path: '/http-examples/step4.html'
-};
+    path: '/http-examples/step6/reverse.html'
 function printReverse (html) {
     var splitHTML = html.split("");
     var reverseHTML = splitHTML.reverse();
